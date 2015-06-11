@@ -1,0 +1,84 @@
+﻿
+<!doctype html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><html lang="en" class="no-js"> <![endif]-->
+<html lang="en">
+<head>
+
+    <!-- Basic -->
+    <title>Margo | Blog</title>
+
+    <!-- Define Charset -->
+    <meta charset="utf-8">
+
+    <!-- Responsive Metatag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Page Description and Author -->
+    <meta name="description" content="Margo - Responsive HTML5 Template">
+    <meta name="author" content="iThemesLab">
+
+
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" type="text/css" media="screen">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="~/Content/css/font-awesome.min.css" type="text/css" media="screen">
+
+    <!-- Margo CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/style.css" media="screen">
+
+    <!-- Responsive CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/responsive.css" media="screen">
+    <!-- Color CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="~/Content/css/colors/blue.css" title="blue" media="screen" />
+
+
+    <!-- Margo JS  -->
+    <script type="text/javascript" src="~/Content/js/jquery-2.1.1.min.js"></script>
+
+    <script type="text/javascript" src="~/Content/js/jquery.migrate.js"></script>
+    <script type="text/javascript" src="~/Content/js/modernizrr.js"></script>
+    <script type="text/javascript" src="~/Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="~/Content/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/nivo-lightbox.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="~/Content/js/count-to.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery.textillate.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="~/Content/js/script.js"></script>
+
+    <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+</head>
+<body>
+
+    <!-- Container -->
+    <div id="container">
+
+        <!-- Start Header -->
+        <div class="hidden-header"></div>
+        @Html.Partial("~/Views/Shared/_Header.cshtml")
+        <!-- End Page Banner -->
+
+        <!-- Start Content -->
+        @RenderBody()
+        <!-- End Content -->
+
+        <!-- Start Footer -->
+        @Html.Partial("~/Views/Shared/_Footer.cshtml")
+        <!-- End Footer -->
+
+    </div>
+    <!-- End Container -->
+
+    <!-- Go To Top Link -->
+    @Html.Partial("~/Views/Shared/_GotoTop.cshtml")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
