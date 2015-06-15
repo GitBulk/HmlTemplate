@@ -54,6 +54,7 @@ namespace Blog2
                       "~/Content/js/jquery.nicescroll.min.js",
                       "~/Content/js/jquery.parallax.js",
                       "~/Content/js/count-to.js",
+                      "~/Content/js/js.cookie-1.5.1.min.js",
                       "~/Content/js/script.js"));
 
             bundles.Add(new StyleBundle("~/Content/blog").Include(

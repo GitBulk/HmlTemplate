@@ -370,6 +370,8 @@
     <Content Include="Content\images\testimonials-bg1.jpg" />
     <Content Include="Content\images\venda-pic.png" />
     <Content Include="Content\js\bootstrap-dialog.js" />
+    <Content Include="Content\js\js.cookie-1.5.1.min.js" />
+    <Content Include="Content\js\newsletter-popup.js" />
     <Content Include="Content\js\contact.js" />
     <Content Include="Content\js\count-to.js" />
     <Content Include="Content\js\embededGoogleMap.js" />

@@ -8,20 +8,23 @@
 
 @Html.Partial("~/Views/Shared/_PopupNewsLetter.cshtml")
 
-<a class="bootstrapTest" href="#">
-    Click me
-</a>
-
-
 @section scripts{
-    <script src="~/Content/js/bootstrap-dialog.js"></script>
-    <script>
+    <script src="~/Content/js/newsletter-popup.js"></script>
+
+    @*<script type="text/javascript">
         $(document).ready(function () {
             $('a.bootstrapTest').click(function () {
                 //BootstrapDialog.alert('I want banana!');
+                $("body").append('<div class="popup-overlay"><div class="popup-close-backdrop"></div></div>');
+                $("div.popup-modal").show();
+                console.log("a.bootstrapTest");
+            });
 
+            $('button.popup-modal-button-close').click(function () {
+                $("div.popup-modal").hide();
+                $("div.popup-overlay").remove();
             });
         })
 
-    </script>
+</script>*@
 }

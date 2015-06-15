@@ -1,4 +1,4 @@
-/* CSS Document */
+38/* CSS Document */
 
 /*
 	Theme Name: Margo
@@ -41,7 +41,7 @@ body {
     line-height: 21px;
     font-weight: 300;
     color: #444;
-    background: url(../images/patterns/1.png) fixed repeat;
+    /*background: url(../images/patterns/1.png) fixed repeat;*/
 }
 
 strong, b {
@@ -123,7 +123,7 @@ p {
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
     line-height: 22px;
-    font-weight: bolder;
+    /*font-weight: bolder;*/
     margin: 0;
 }
 
@@ -3998,7 +3998,7 @@ ul.post-meta {
 
     .sidebar a {
         color: #444;
-        font-weight: bolder;
+        /*font-weight: bolder;*/
     }
 
     .sidebar .widget {
@@ -5939,7 +5939,8 @@ ul.footer-nav {
     margin-top: -200px;
     width: 500px;
     height: 200px;
-    z-index: 1999;
+    z-index: 100000000;
+    display: none;
 }
 
 .popup-modal-background-header {
@@ -5966,6 +5967,35 @@ ul.footer-nav {
     margin-top: 10px;
 }
 
+.popup-modal-button-close {
+}
+
 .popup-textbox {
     margin-top: 5px;
+}
+
+.popup-overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.58);
+    opacity: 1;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9999999;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    overflow: auto;
+}
+
+.popup-close-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
