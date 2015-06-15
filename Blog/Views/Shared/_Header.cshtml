@@ -7,15 +7,15 @@
                 <div class="col-md-6">
                     <!-- Start Contact Info -->
                     <ul class="contact-details">
-                        @*<li>
-                            <a href="#"><i class="fa fa-map-marker"></i> Singapore</a>
-                        </li>*@
                         <li>
-                            <a href="#"><i class="fa fa-envelope-o"></i> info@yourcompany.com</a>
+                            <a href="#"><i class="fa fa-map-marker"></i> Singapore</a>
                         </li>
                         @*<li>
-                            <a href="#"><i class="fa fa-phone"></i> +12 345 678 000</a>
-                        </li>*@
+                                <a href="#"><i class="fa fa-envelope-o"></i> gitbulk@gmail.com</a>
+                            </li>*@
+                        @*<li>
+                                <a href="#"><i class="fa fa-phone"></i> +12 345 678 000</a>
+                            </li>*@
                     </ul>
                     <!-- End Contact Info -->
                 </div>
@@ -32,29 +32,29 @@
                             <a class="google itl-tooltip" data-placement="bottom" target="_blank" title="Google Plus" href="//plus.google.com"><i class="fa fa-google-plus"></i></a>
                         </li>
                         <li>
-                            <a class="rss itl-tooltip" data-placement="bottom" target="_blank" title="Feed" href="//plus.google.com"><i class="fa fa-rss"></i></a>
+                            <a class="rss itl-tooltip" data-placement="bottom" target="_blank" title="Feed" href="#"><i class="fa fa-rss"></i></a>
                         </li>
                         @*<li>
-                            <a class="dribbble itl-tooltip" data-placement="bottom" title="Dribble" href="#"><i class="fa fa-dribbble"></i></a>
-                        </li>
-                        <li>
-                            <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a class="flickr itl-tooltip" data-placement="bottom" title="Flickr" href="#"><i class="fa fa-flickr"></i></a>
-                        </li>
-                        <li>
-                            <a class="tumblr itl-tooltip" data-placement="bottom" title="Tumblr" href="#"><i class="fa fa-tumblr"></i></a>
-                        </li>
-                        <li>
-                            <a class="instgram itl-tooltip" data-placement="bottom" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a class="vimeo itl-tooltip" data-placement="bottom" title="vimeo" href="#"><i class="fa fa-vimeo-square"></i></a>
-                        </li>
-                        <li>
-                            <a class="skype itl-tooltip" data-placement="bottom" title="Skype" href="#"><i class="fa fa-skype"></i></a>
-                        </li>*@
+                                <a class="dribbble itl-tooltip" data-placement="bottom" title="Dribble" href="#"><i class="fa fa-dribbble"></i></a>
+                            </li>
+                            <li>
+                                <a class="linkdin itl-tooltip" data-placement="bottom" title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a class="flickr itl-tooltip" data-placement="bottom" title="Flickr" href="#"><i class="fa fa-flickr"></i></a>
+                            </li>
+                            <li>
+                                <a class="tumblr itl-tooltip" data-placement="bottom" title="Tumblr" href="#"><i class="fa fa-tumblr"></i></a>
+                            </li>
+                            <li>
+                                <a class="instgram itl-tooltip" data-placement="bottom" title="Instagram" href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a class="vimeo itl-tooltip" data-placement="bottom" title="vimeo" href="#"><i class="fa fa-vimeo-square"></i></a>
+                            </li>
+                            <li>
+                                <a class="skype itl-tooltip" data-placement="bottom" title="Skype" href="#"><i class="fa fa-skype"></i></a>
+                            </li>*@
                     </ul>
                     <!-- End Social Links -->
                 </div>
@@ -76,13 +76,13 @@
             <div class="navbar-collapse collapse">
                 <!-- Stat Search -->
                 @*<div class="search-side">
-                    <a href="#" class="show-search"><i class="fa fa-search"></i></a>
-                    <div class="search-form">
-                        <form autocomplete="off" role="search" method="get" class="searchform" action="#">
-                            <input type="text" value="" name="s" id="s" placeholder="Search the site...">
-                        </form>
-                    </div>
-                </div>*@
+                        <a href="#" class="show-search"><i class="fa fa-search"></i></a>
+                        <div class="search-form">
+                            <form autocomplete="off" role="search" method="get" class="searchform" action="#">
+                                <input type="text" value="" name="s" id="s" placeholder="Search the site...">
+                            </form>
+                        </div>
+                    </div>*@
                 <!-- End Search -->
                 <!-- Start Navigation List -->
                 <ul class="nav navbar-nav navbar-right">
@@ -142,6 +142,21 @@
                     <li>
                         @*<a href="contact.html">Contact</a>*@
                         @Html.ActionLink("Contact", "Contact", "Home")
+                    </li>
+                    <!-- Search Widget -->
+                    @*<div class="widget widget-search">*@
+                    @*<form action="#">
+                            <input type="search" placeholder="Enter Keywords..." />
+                            <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                        </form>*@
+                    @*</div>*@
+                    <li>
+                        <div class="widget widget-search search-box-header">
+                            <form action="#">
+                                <input type="search" placeholder="Enter Keywords..." />
+                                <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
                     </li>
                 </ul>
                 <!-- End Navigation List -->

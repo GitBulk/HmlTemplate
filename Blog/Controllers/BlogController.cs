@@ -23,5 +23,10 @@ namespace Blog2.Controllers
         {
             return View();
         }
+
+        public ActionResult Popup()
+        {
+            return View();
+        }
     }
 }

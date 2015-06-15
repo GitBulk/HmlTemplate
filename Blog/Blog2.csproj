@@ -173,7 +173,7 @@
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="FormatStyleCss.cs" />
+    <Compile Include="ScriptStyleConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -189,6 +189,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\bootstrap-dialog.css" />
+    <Content Include="Content\css\bootstrap-dialog.min.css" />
     <Content Include="Content\css\colors\beige.css" />
     <Content Include="Content\css\colors\blue.css" />
     <Content Include="Content\css\colors\cyan.css" />
@@ -243,6 +245,7 @@
     <Content Include="Content\images\flickr-09.jpg" />
     <Content Include="Content\images\footer-margo.png" />
     <Content Include="Content\images\home %281%29.jpg" />
+    <Content Include="Content\images\icons\ajax-loader.gif" />
     <Content Include="Content\images\lightbox\close%402x.png" />
     <Content Include="Content\images\lightbox\close.png" />
     <Content Include="Content\images\lightbox\loading%402x.gif" />
@@ -366,6 +369,7 @@
     <Content Include="Content\images\testimonials-bg.jpg" />
     <Content Include="Content\images\testimonials-bg1.jpg" />
     <Content Include="Content\images\venda-pic.png" />
+    <Content Include="Content\js\bootstrap-dialog.js" />
     <Content Include="Content\js\contact.js" />
     <Content Include="Content\js\count-to.js" />
     <Content Include="Content\js\embededGoogleMap.js" />
@@ -470,6 +474,8 @@
     <Content Include="Views\Shared\_GotoTop.cshtml" />
     <Content Include="Views\Shared\_404NotFound.cshtml" />
     <Content Include="Views\Blog\Detail.cshtml" />
+    <Content Include="Views\Shared\_PopupNewsLetter.cshtml" />
+    <Content Include="Views\Blog\Popup.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Code\" />

@@ -39,11 +39,29 @@ namespace Blog2
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
+            bundles.Add(new ScriptBundle("~/bundles/blog").Include(
+                      "~/Content/js/jquery-2.1.1.min.js",
+                      "~/Content/js/jquery.lazyload.min.js",
+                      "~/Content/js/jquery.migrate.js",
+                      "~/Content/js/modernizrr.js",
+                      "~/Scripts/bootstrap.min.js",
+                      "~/Content/js/jquery.fitvids.js",
+                      "~/Content/js/owl.carousel.min.js",
+                      "~/Content/js/nivo-lightbox.min.js",
+                      "~/Content/js/jquery.isotope.min.js",
+                      "~/Content/js/jquery.appear.js",
+                      "~/Content/js/jquery.textillate.js",
+                      "~/Content/js/jquery.nicescroll.min.js",
+                      "~/Content/js/jquery.parallax.js",
+                      "~/Content/js/count-to.js",
+                      "~/Content/js/script.js"));
+
             bundles.Add(new StyleBundle("~/Content/blog").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/css/font-awesome.css",
+                      "~/Content/css/font-awesome.min.css",
                       "~/Content/css/style.css",
-                      "~/Content/css/responsive.css"));
+                      "~/Content/css/responsive.css",
+                      "~/Content/css/colors/blue.css"));
 
             bundles.Add(new StyleBundle("~/Content/blue").Include(
                       "~/Content/css/colors/blue.css"));

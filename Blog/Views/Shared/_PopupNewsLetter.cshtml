@@ -1,0 +1,60 @@
+﻿@*<div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="bootstrap-dialog-header">
+                    <div class="bootstrap-dialog-close-button" style="display: block;">
+                        <button class="close">×</button>
+                    </div>
+                    <div class="bootstrap-dialog-title" id="abe1283c-707b-4039-867e-acd790cc5d8d_title">Information</div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="bootstrap-dialog-body">
+                    <div class="bootstrap-dialog-message">Hi Apple!</div>
+                </div>
+            </div>
+            <div class="modal-footer" style="display: block;">
+                <div class="bootstrap-dialog-footer">
+                    <div class="bootstrap-dialog-footer-buttons">
+                        <button class="btn btn-default" id="f3ea3881-ea49-409f-b999-561486c32feb">Button 1</button>
+                        <button class="btn btn-primary" id="173308fb-4565-4181-b682-455acc745690">Button 2</button>
+                        <button class="btn btn-warning" id="cede9d89-e4ad-4b81-9c7e-255a427ed305">
+                            <span class="bootstrap-dialog-button-icon glyphicon glyphicon-ban-circle"></span>Button 3
+                        </button>
+                        <button class="btn btn-default" id="5f682f37-b0a4-410d-bf15-a091e290ccec">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+
+<div class="popup-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header popup-modal-background-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title popup-modal-title">
+                    <i class="fa fa-envelope"></i> Newsletter</h4>
+            </div>
+            <div class="modal-body popup-body">
+                <p>Join our mailing list to stay up to date and get notices about our new releases!</p>
+                @*<form class="subscribe">
+                <input type="text" placeholder="mail@example.com">
+                <input type="submit" class="btn-system" value="Send">
+            </form>*@
+                <form action="#">
+                    @*<input class="form-control" style="margin-top: 15px" type="search" placeholder="Your e-mail..." />
+                <input class="btn btn-primary " style="margin-top: -5px" type="submit" value="Send">*@
+                    <input class="form-control" type="search" placeholder="Your e-mail..." />
+                    <input class="btn btn-primary popup-modal-button-send" type="submit" value="Send">
+
+                </form>
+            </div>
+            @*<div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>*@
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Popup";
+    Layout = "~/Views/Shared/_RightSideBar.cshtml";
+}
+
+<h2>Popup</h2>
+
+@Html.Partial("~/Views/Shared/_PopupNewsLetter.cshtml")
+
+<a class="bootstrapTest" href="#">
+    Click me
+</a>
+
+
+@section scripts{
+    <script src="~/Content/js/bootstrap-dialog.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('a.bootstrapTest').click(function () {
+                //BootstrapDialog.alert('I want banana!');
+
+            });
+        })
+
+    </script>
+}

@@ -24,17 +24,12 @@
 /*   11 - Sidebar Styles           */
 /*   12 - Footer Styles 		   */
 /*   13 - Plugins Styles 	  	   */
+/*   14 - Modal Styles 	  	   */
 
 
-
-
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
-
-
-
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);*/
 
 
 /*------------------------------------------*/
@@ -391,6 +386,10 @@ input[type="submit"] {
 /*	     02 - Header & Navigation
 /*------------------------------------------*/
 
+.search-box-header {
+    padding: 20px 15px 20px 15px;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -594,7 +593,7 @@ ul.social-list {
 }
 
 .navbar-default .navbar-nav {
-    /*margin-right: 10px !important;*/ /* remove search box at navigation bar */
+    margin-right: -30px !important;
     position: relative;
     transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
@@ -5670,36 +5669,6 @@ ul.footer-nav {
     border: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .services-2 {
     position: relative;
     text-align: center;
@@ -5859,12 +5828,6 @@ ul.footer-nav {
     line-height: 80px;
 }
 
-
-
-
-
-
-
 .parallax {
     width: 100%;
     padding: 0;
@@ -5884,15 +5847,6 @@ ul.footer-nav {
     background-position: 50% 0px !important;
     background-attachment: scroll !important;
 }
-
-
-
-
-
-
-
-
-
 
 .services-3 {
     position: relative;
@@ -5972,4 +5926,46 @@ ul.footer-nav {
 
 
 .lazy {
+}
+
+
+/*   14 - Modal Styles 	  	   */
+
+.popup-modal {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    margin-left: -300px;
+    margin-top: -200px;
+    width: 500px;
+    height: 200px;
+    z-index: 1999;
+}
+
+.popup-modal-background-header {
+    background-color: #00afd1; /*#428bca;*/
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+
+.popup-modal-title {
+    color: #fff;
+    display: inline-block;
+}
+
+.popup-body {
+    margin-top: -7px;
+}
+
+.popup-modal p {
+    margin-bottom: 6px;
+}
+
+.popup-modal-button-send {
+    margin-top: 10px;
+}
+
+.popup-textbox {
+    margin-top: 5px;
 }
