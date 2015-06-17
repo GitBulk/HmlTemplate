@@ -8,6 +8,7 @@ namespace Blog2
 {
     public static class ScriptStyleConfig
     {
+        public const string ScriptBundlesFont = "~/bundles/initFont";
         public const string ScriptBundlesBlog = "~/bundles/blog";
         public const string StyleBundlesBlog = "~/Content/blog";
         public const string Screen = @"<link href=""{0}"" rel=""stylesheet"" type=""text/css"" media=""screen"" />";
@@ -20,6 +21,11 @@ namespace Blog2
         public static IHtmlString RenderStyles()
         {
             return Styles.Render(StyleBundlesBlog);
+        }
+
+        public static IHtmlString RenderFonts()
+        {
+            return Styles.Render(ScriptBundlesFont);
         }
     }
 }

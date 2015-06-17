@@ -39,6 +39,9 @@ namespace Blog2
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
+            bundles.Add(new ScriptBundle("~/bundles/initFont").Include(
+                      "~/Content/js/initFont.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/blog").Include(
                       "~/Content/js/jquery-2.1.1.min.js",
                       "~/Content/js/jquery.lazyload.min.js",
@@ -59,10 +62,12 @@ namespace Blog2
 
             bundles.Add(new StyleBundle("~/Content/blog").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/css/font-awesome.min.css",
-                      "~/Content/css/style.css",
+                      //"~/Content/css/font-awesome.min.css",
+                      //"~/Content/css/style.css",
                       "~/Content/css/responsive.css",
-                      "~/Content/css/colors/blue.css"));
+                      "~/Content/css/colors/blue.css")
+                      .Include("~/Content/css/style.css", new CssRewriteUrlTransform())
+                      .Include("~/Content/css/font-awesome.min.css", new CssRewriteUrlTransform()));
 
             bundles.Add(new StyleBundle("~/Content/blue").Include(
                       "~/Content/css/colors/blue.css"));

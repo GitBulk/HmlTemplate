@@ -370,6 +370,12 @@
     <Content Include="Content\images\testimonials-bg1.jpg" />
     <Content Include="Content\images\venda-pic.png" />
     <Content Include="Content\js\bootstrap-dialog.js" />
+    <Content Include="Content\js\initFont.js" />
+    <Content Include="Content\js\jquery.appear.min.js" />
+    <Content Include="Content\js\jquery.fitvids.min.js" />
+    <Content Include="Content\js\jquery.lettering.min.js" />
+    <Content Include="Content\js\jquery.parallax.min.js" />
+    <Content Include="Content\js\jquery.textillate.min.js" />
     <Content Include="Content\js\js.cookie-1.5.1.min.js" />
     <Content Include="Content\js\newsletter-popup.js" />
     <Content Include="Content\js\contact.js" />
@@ -393,6 +399,7 @@
     <Content Include="Content\js\jquery.textillate.js" />
     <Content Include="Content\js\mediaelement-and-player.js" />
     <Content Include="Content\js\modernizrr.js" />
+    <Content Include="Content\js\newsletter-popup.min.js" />
     <Content Include="Content\js\nivo-lightbox.js" />
     <Content Include="Content\js\nivo-lightbox.min.js" />
     <Content Include="Content\js\owl.carousel.js" />

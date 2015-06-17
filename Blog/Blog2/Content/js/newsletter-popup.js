@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
     $('button.popup-modal-button-close').click(function () {
         closePopup();

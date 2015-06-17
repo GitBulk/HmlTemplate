@@ -16,12 +16,11 @@
 
     <!-- Page Description and Author -->
     <meta name="description" content="Margo - Responsive HTML5 Template">
-    <meta name="author" content="iThemesLab">
+    <meta name="author" content="gitbulk">
 
     @ScriptStyleConfig.RenderStyles()
     @RenderSection("styles", required: false)
     @ScriptStyleConfig.RenderScripts()
-
     @*@Styles.Render(ScriptStyleConfig.StyleBundlesBlog)*@
 
     <!-- Bootstrap CSS  -->
@@ -217,9 +216,7 @@
     <!-- End Container -->
     <!-- Go To Top Link -->
     @Html.Partial("~/Views/Shared/_GotoTop.cshtml")
-    @*@Scripts.Render(ScriptStyleConfig.ScriptBundlesBlog)*@
-    
     @RenderSection("scripts", required: false)
-
+    @*@ScriptStyleConfig.RenderFonts()*@
 </body>
 </html>
